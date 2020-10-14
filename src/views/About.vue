@@ -1,9 +1,22 @@
 <template>
   <div id="app">
-    <h4>Birthday Memory Game</h4>
-    <div id="cards-flex">
-      <div id="card" v-for="card in cards" :key="card.id" @click="click(card)">
-        <img v-bind:src="card.blank_img" />
+    <div id="desktop-view">
+      <div id="alert-box">
+        <h2>Aplikacija nije dostupna na desktop i laptop računalima!</h2>
+        <h1>OTVORI NA MOBITELU LEVATINO</h1>
+      </div>
+    </div>
+    <div id="mobile-view">
+      <h4>Birthday Memory Game</h4>
+      <div id="cards-flex">
+        <div
+          id="card"
+          v-for="card in cards"
+          :key="card.id"
+          @click="click(card)"
+        >
+          <img v-bind:src="card.blank_img" />
+        </div>
       </div>
     </div>
   </div>
@@ -154,6 +167,23 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   height: 90vh;
+}
+
+@media only screen and (max-width: 430px) {
+  #desktop-view {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 430px) and (max-width: 960px) {
+  #desktop-view {
+    display: none;
+  }
+}
+@media only screen and (min-width: 961px) {
+  #mobile-view {
+    display: none;
+  }
 }
 </style>
 

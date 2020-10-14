@@ -1,11 +1,19 @@
 <template>
   <div class="home">
-    <div id="gif-box">
-      <router-link to="/about"
-        ><img src="../../images/gif_2.gif"
-      /></router-link>
+    <div id="desktop-view">
+      <div id="alert-box">
+        <h2>Aplikacija nije dostupna na desktop i laptop računalima!</h2>
+        <h1>OTVORI NA MOBITELU LEVATINO</h1>
+      </div>
+    </div>
+    <div id="mobile-view">
+      <div id="gif-box">
+        <router-link to="/about"
+          ><img src="../../images/gif_2.gif"
+        /></router-link>
 
-      <h3>Klikni na kutiju levatu</h3>
+        <h3>Klikni na kutiju levatu</h3>
+      </div>
     </div>
   </div>
 </template>
@@ -32,5 +40,22 @@ export default {
 
 .home img {
   width: 100%;
+}
+
+@media only screen and (max-width: 430px) {
+  #desktop-view {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 430px) and (max-width: 960px) {
+  #desktop-view {
+    display: none;
+  }
+}
+@media only screen and (min-width: 961px) {
+  #mobile-view {
+    display: none;
+  }
 }
 </style>
