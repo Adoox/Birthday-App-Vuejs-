@@ -3,7 +3,6 @@
     <div id="desktop-view">
       <div id="alert-box">
         <h2>Aplikacija nije dostupna na desktop i laptop računalima!</h2>
-        <h1>OTVORI NA MOBITELU LEVATINO</h1>
       </div>
     </div>
     <div id="mobile-view">
@@ -12,7 +11,7 @@
           ><img src="../../images/gif_2.gif"
         /></router-link>
 
-        <h3>Klikni na kutiju levatu</h3>
+        <h3>Your text goes here!</h3>
       </div>
     </div>
   </div>

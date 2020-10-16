@@ -3,7 +3,6 @@
     <div id="desktop-view">
       <div id="alert-box">
         <h2>Aplikacija nije dostupna na desktop i laptop računalima!</h2>
-        <h1>OTVORI NA MOBITELU LEVATINO</h1>
       </div>
     </div>
     <div id="mobile-view">
@@ -113,12 +112,8 @@ export default {
 
       if (this.cards_won.length == this.cards.length / 2) {
         this.pobjeda = true;
-        swal(
-          "Svaka čast levatu. Sad klikni OK da pročitaš najbolju čestitku na svijetu"
-        ).then(() => {
-          swal(
-            `Ja se nadam prvo da si uspio doć do ove poruke i da je ovo sve uspjelo radit kako treba, ako nisi uspio doć, ništa onda jebiga, do tebe je jer si ti u backendu opet zajebo kako god hhehehehehe. Sretan rođendan bato moj, ahbab moj, želim ti sve najbolje u životu što se može poželjeti, od zdravlja i nafake, do stotina uspješno urađenih projekata. Želim da te uvijek sreća i dobro prati, da samo znaš za najbolje i najljepše i da te nikad ni u jednom trenutku ništa ne pokloba. Ti si jedna velika ljudina i u ovoj čestitci želim da se družimo, radimo i stvaramo do kraja naših karijera i života! Još jednom želim ti sve najbolje u životu, volim te!`
-          );
+        swal("Your text goes here").then(() => {
+          swal(`Your message goes here!`);
         });
       }
     },
