@@ -6,7 +6,7 @@
       </div>
     </div>
     <div id="mobile-view">
-      <h4>Birthday Memory Game</h4>
+      <h4>Rejhana Baručija - Dedić Memory Game</h4>
       <div id="cards-flex">
         <div
           id="card"
@@ -23,6 +23,8 @@
 
 <script>
 import swal from "sweetalert";
+
+
 export default {
   name: "App",
   data() {
@@ -91,6 +93,10 @@ export default {
       cards_won: [],
     };
   },
+
+  created(){
+      swal(`Prije nego sto vidis i procitas cestitku, moras malo to zasluzit i REEEŠIT ovaj memory game koji sam ja drugacije zamislio a sad nema smisla jer nigdje nisam mogao nac nase zajednicke slike jer se NIKAD NISI HTJELA SLIKAT SA MNOM al oke :). Aj sad nastavi dalje`);
+  },
   methods: {
     check() {
       let card_one = this.cards_chosen[0];
@@ -112,8 +118,8 @@ export default {
 
       if (this.cards_won.length == this.cards.length / 2) {
         this.pobjeda = true;
-        swal("Your text goes here").then(() => {
-          swal(`Your message goes here!`);
+        swal("Eh eto svaka cast pa si mogla slozit ovo. Sad moš pritisnut OK da procitas cestitkicu").then(() => {
+          swal(`Iako sam u glavi imao da napravim ovo da bude vise slika nasih i da to fino sve slozis i da se namucis dok dodjes do poruke, nije usjelo jer NEMA SLIKA al nema veze. Uzeo sam ove 3 slike sa jednom posebnom porukom, sa nasom jednom da znas da si moja micka najdraza, sa atlasom anatomije da ti pozelim da polozis aBd sve od anatomije do histologije i na kraju sa stetoskopom da to sve fino zaokruzis i da aBd za nekoliko godinica budes NAJBOLJA DOKTORICA ns svijetu koja ce gostovat na hayatu u ramazanskom programu i pravit iftar a kidare sjedit u studiju HAHAHAHHAHAHAHAH. Sretan rodjendan micko moja, znas da ti zelim sve najbolje sto se moze pozeljeti, zelim ti prije svega puno zdravlja a onda sve ostalo, da te sreca i uspjeh prati svakog dana i da ti se aBd ostvari sve ovo sto sam na pocetku napisao i jos puno vise od toga. Ti si jedna pametnica velika koja zasluzuje sve najbolje i koja ce dobit sve najbolje i najljepse. Nikad mi se nemoj sikirati, nikada mi nemoj pokleknuti ii uvijek budi sretna i nasmijana, danas i sutra i svaki dan. Jos jednom, sretan rodjendan zeli ti tvoja micika <3 `);
         });
       }
     },
@@ -146,7 +152,8 @@ export default {
 #card {
   width: 45%;
   height: 170px;
-  background-color: rgb(211, 211, 211);
+  background-color: rgb(245, 245, 245);
+  border: none;
 }
 
 #card img {

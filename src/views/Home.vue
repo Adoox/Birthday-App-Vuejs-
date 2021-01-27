@@ -11,7 +11,7 @@
           ><img src="../../images/gif_2.gif"
         /></router-link>
 
-        <h3>Your text goes here!</h3>
+        <h3>Klikni i otvori kutiju sa svojom čestitkom!</h3>
       </div>
     </div>
   </div>
